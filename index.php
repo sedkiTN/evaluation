@@ -22,11 +22,11 @@
 		          	'url':'server_processing.php'
 		      	},
 		      	'columns': [
-		         	{ data: 'nom' },
-		         	{ data: 'dateAjout' },
-					{ data: 'nbJour' },
-		         	{ data: 'stock' },
-		         	{ data: 'ca' }
+		         	{ data: 'nom', orderable: true },
+		         	{ data: 'dateAjout', orderable: true },
+					{ data: 'nbJour', orderable: false },
+		         	{ data: 'stock', orderable: false },
+		         	{ data: 'ca', orderable: false }
 		      	],
 				"lengthMenu": [[2, 25, 50, -1], [2, 25, 50, "All"]],
 				'order': [[1, 'desc']],

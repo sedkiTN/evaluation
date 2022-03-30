@@ -16,10 +16,9 @@ $searchArray = array();
 // Search
 $searchQuery = " ";
 if($searchValue != ''){
-   $searchQuery = " AND (nom LIKE :nom ) ";
+   $searchQuery = " AND nom LIKE :nom ";
    $searchArray = array( 
         'nom'=>"%$searchValue%",
-        'dateAjout'=>"%$searchValue%"
    );
 }
 
